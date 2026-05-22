@@ -3,10 +3,374 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <meta name="description" content="Logan Hendricks — Software Engineering Manager. Go, AWS, distributed systems, and team leadership.">
+    <title>Logan Hendricks — Software Engineering Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Logan Hendricks</p>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">LH<span class="nav-brand-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="hero-eyebrow">Software Engineering Manager</p>
+                <h1 class="hero-name">Logan<br><span class="hero-name-accent">Hendricks</span></h1>
+                <p class="hero-tagline">
+                    Building distributed systems in Go and AWS, leading engineering teams,
+                    and shipping integrations at the scale of card networks.
+                </p>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn btn-primary">View Experience</a>
+                    <a href="resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download Resume</a>
+                </div>
+                <div class="hero-meta">
+                    <span class="meta-chip"><span class="meta-dot"></span>Currently at Kunai (PwC)</span>
+                </div>
+            </div>
+            <div class="hero-bg" aria-hidden="true"></div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-head">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a software engineering leader with a decade of experience building
+                        backend systems, cloud infrastructure, and the teams that deliver them.
+                        Today I oversee a division of eight engineering teams at Kunai (PwC),
+                        coordinating Capital One's integration of the Discover Card Network.
+                    </p>
+                    <p>
+                        I've worn most of the hats — from principal engineer writing device drivers
+                        and serverless services, to DevOps architect managing CI/CD across 200+ repos,
+                        to instructor running coding bootcamps. I care about pragmatic architecture,
+                        clear delivery, and engineers who keep growing.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-num">10+</div>
+                        <div class="stat-label">Years engineering</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">30+</div>
+                        <div class="stat-label">Engineers led</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">8</div>
+                        <div class="stat-label">Teams managed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">3</div>
+                        <div class="stat-label">Languages spoken</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="section-head">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Apr 2025 — Present</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Software Engineering Manager</h3>
+                        <div class="timeline-company">Kunai (PwC)</div>
+                        <ul class="timeline-points">
+                            <li>Oversaw client integration of Capital One's acquisition of the Discover Card Network.</li>
+                            <li>Managed a division of eight engineering teams with 30+ engineers.</li>
+                            <li>Architected AWS + Go solutions to connect Discover Card Network into Capital One.</li>
+                            <li>Established a continual performance review program for the division.</li>
+                            <li>Participant in the AI Pilot Program within the PwC / Kunai integration.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">May 2024 — Apr 2025</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Tech Lead</h3>
+                        <div class="timeline-company">Kunai</div>
+                        <ul class="timeline-points">
+                            <li>Tech Lead on AirKey, managing 3–5 senior backend engineers.</li>
+                            <li>On the Discover project, managed three engineering teams (12 engineers total).</li>
+                            <li>Built Kunai's technical interview process and operated as interview manager.</li>
+                            <li>Delivered engineering progress reports for leadership visibility.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Feb 2024 — May 2024</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Senior Software Engineer</h3>
+                        <div class="timeline-company">Kunai</div>
+                        <ul class="timeline-points">
+                            <li>Built RESTful Go backend Lambdas and ECS (Fargate) containers.</li>
+                            <li>Managed IaC for AWS services: SQS, IAM, Lambda, S3, DynamoDB, RDS, SNS, ECS.</li>
+                            <li>Managed IaC for ancillary services: Jenkins, GitHub, SonarQube.</li>
+                            <li>Built Java ECS containers and managed DynamoDB / PostgreSQL data layers.</li>
+                            <li>Built Open Telemetry integrations in Go; managed Splunk and New Relic dashboards.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Jan 2023 — Feb 2024</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Senior Software Engineer</h3>
+                        <div class="timeline-company">Freemodel Inc</div>
+                        <ul class="timeline-points">
+                            <li>Engineering lead for multiple cross-engineering releases.</li>
+                            <li>Developed serverless web applications in Go, Lambda, and GraphQL.</li>
+                            <li>Built React web clients and CloudFormation-managed serverless environments.</li>
+                            <li>Leveraged DynamoDB streams and Kinesis for event-based processing.</li>
+                            <li>Constructed product roadmap with the Product Manager and CEO.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Mar 2021 — Sep 2022</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Senior Software Engineer</h3>
+                        <div class="timeline-company">Moov Financial Inc</div>
+                        <ul class="timeline-points">
+                            <li>Developed RESTful web applications in Go and Mux.</li>
+                            <li>Designed microservice architecture for user information and PII.</li>
+                            <li>Mentored a team of mid-level engineers.</li>
+                            <li>Database architect (MySQL); built deployment infra with GitHub Actions and Docker.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Sep 2020 — Mar 2021</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Software Engineer</h3>
+                        <div class="timeline-company">Space Dynamics Laboratory</div>
+                        <ul class="timeline-points">
+                            <li>Principal developer building RESTful web applications in Go and Vue.</li>
+                            <li>Principal database architect (PostgreSQL).</li>
+                            <li>Built deployment infrastructure from scratch with Jenkins, Docker, Docker Compose.</li>
+                            <li>Wrote physical device drivers in Go connecting web apps to hardware.</li>
+                            <li>DevOps consultant for internal engineering teams.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Oct 2017 — Sep 2020</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Software Engineering Instructor</h3>
+                        <div class="timeline-company">MTECH</div>
+                        <ul class="timeline-points">
+                            <li>Prepared curriculum for a coding bootcamp cohort program.</li>
+                            <li>Instructed cohorts of 15–20 students.</li>
+                            <li>Graded and reviewed student assignments.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Aug 2019 — Sep 2020</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Software Engineer</h3>
+                        <div class="timeline-company">DigiCert</div>
+                        <ul class="timeline-points">
+                            <li>Built RESTful endpoints using Java, Spring, and Jersey.</li>
+                            <li>Developed an address-validation service in Go using the Google Geocoding API.</li>
+                            <li>Optimized endpoint queries leveraging Cassandra and Java.</li>
+                            <li>ETL of certificate-migration data in MySQL and Cassandra.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Jan 2017 — Aug 2019</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">DevOps Engineer</h3>
+                        <div class="timeline-company">Verisk Analytics</div>
+                        <ul class="timeline-points">
+                            <li>Architected and managed CI/CD for 200+ repos.</li>
+                            <li>Led the CI switchover from Jenkins to Concourse using Groovy and Python.</li>
+                            <li>Built custom Concourse resources in Bash, Go, and Docker; contributed to Concourse core in Go.</li>
+                            <li>Built new cloud resources in CloudFormation, Lambda, EC2, ECR, CodePipeline, CodeBuild, S3.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Jul 2016 — Feb 2017</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Software Development Lead</h3>
+                        <div class="timeline-company">ACH Fulfillment</div>
+                        <ul class="timeline-points">
+                            <li>Supervised an internal applications team of two junior engineers.</li>
+                            <li>Built event pages on the LAMP stack (PHP, MySQL, Apache2, Ubuntu).</li>
+                            <li>Managed app servers and databases for three internal applications.</li>
+                            <li>Built internal apps with AngularJS, Angular 2, Yii2, and PostgreSQL.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-period">Apr 2013 — May 2015</div>
+                    <div class="timeline-body">
+                        <h3 class="timeline-role">Project &amp; Gallery Manager</h3>
+                        <div class="timeline-company">Holdman Studios</div>
+                        <ul class="timeline-points">
+                            <li>Led three teams in art-glass production.</li>
+                            <li>Managed clients across architecture firms, public institutions, and private corporations.</li>
+                            <li>Project manager for large-scale hot-glass production contracts.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-head">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Languages</h3>
+                    <div class="chips">
+                        <span class="chip chip-primary">Go</span>
+                        <span class="chip">Java</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">PHP</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Frameworks</h3>
+                    <div class="chips">
+                        <span class="chip">Spring</span>
+                        <span class="chip">Vue</span>
+                        <span class="chip">Angular</span>
+                        <span class="chip">React</span>
+                        <span class="chip">Cypress</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Cloud &amp; Infra</h3>
+                    <div class="chips">
+                        <span class="chip chip-primary">AWS</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">Jenkins</span>
+                        <span class="chip">Kafka</span>
+                        <span class="chip">Lambda</span>
+                        <span class="chip">ECS</span>
+                        <span class="chip">CloudFormation</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Data</h3>
+                    <div class="chips">
+                        <span class="chip">DynamoDB</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">Cassandra</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Spoken Languages</h3>
+                    <div class="chips">
+                        <span class="chip chip-lang">English <em>· Native</em></span>
+                        <span class="chip chip-lang">Spanish <em>· Fluent</em></span>
+                        <span class="chip chip-lang">French <em>· Intermediate</em></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="section-head">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Education &amp; Certifications</h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-period">Apr 2023</div>
+                    <h3 class="edu-degree">M.S. Computer Science</h3>
+                    <div class="edu-school">Utah State University</div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-period">Feb 2024 — Feb 2027</div>
+                    <h3 class="edu-degree">AWS Certified Developer — Associate</h3>
+                    <div class="edu-school">Amazon Web Services</div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-period">Apr 2013</div>
+                    <h3 class="edu-degree">B.A. Art History &amp; Business</h3>
+                    <div class="edu-school">Brigham Young University — Idaho</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+            <div class="section-head">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Get in touch</h2>
+            </div>
+            <p class="contact-lead">
+                Open to interesting conversations about engineering leadership, distributed systems,
+                and AWS architecture.
+            </p>
+            <ul class="contact-list">
+                <li>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:Logan.L.Hendricks@gmail.com">Logan.L.Hendricks@gmail.com</a>
+                </li>
+                <li>
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+18017696110">801.769.6110</a>
+                </li>
+                <li>
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/logan-l-hendricks/" target="_blank" rel="noopener">linkedin.com/in/logan-l-hendricks</a>
+                </li>
+                <li>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/loghen41" target="_blank" rel="noopener">github.com/loghen41</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>© <span id="year"></span> Logan Hendricks</span>
+            <span class="footer-meta">Built with HTML &amp; CSS · Hosted on GitHub Pages</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
